@@ -1,16 +1,16 @@
 import * as SecureStore from "expo-secure-store";
-import { IPersistenceRepository } from "./persistence-repository-contract";
+import type { IPersistenceRepository } from "./persistence-repository-contract";
 
 export const expoSecureStoreRepository: IPersistenceRepository = {
-  get(key: string): string | null {
-    return SecureStore.getItem(key);
-  },
+	get(key: string): string | null {
+		return SecureStore.getItem(key);
+	},
 
-  set(key: string, value: string): void {
-    SecureStore.setItem(key, value);
-  },
+	set(key: string, value: string): void {
+		SecureStore.setItem(key, value);
+	},
 
-  remove(key: string): Promise<void> {
-    return SecureStore.deleteItemAsync(key);
-  },
+	remove(key: string): Promise<void> {
+		return SecureStore.deleteItemAsync(key);
+	},
 };

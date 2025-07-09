@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { expoSecureStoreRepository } from "../../infra/repositories/persistence/expo-secure-store-repository";
-import { IPersistenceRepository } from "../../infra/repositories/persistence/persistence-repository-contract";
+import type { IPersistenceRepository } from "../../infra/repositories/persistence/persistence-repository-contract";
 
 const repository: IPersistenceRepository = expoSecureStoreRepository;
 
