@@ -13,6 +13,7 @@
     "@react-navigation/elements": "^2.5.2",
     "@react-navigation/native": "^7.1.14",
     "@react-navigation/native-stack": "^7.3.21",
+    "@tanstack/react-query": "^5.81.5",
     "axios": "^1.10.0",
     "expo": "~53.0.17",
     "expo-constants": "^17.1.7",
